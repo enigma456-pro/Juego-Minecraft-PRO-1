@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft - Isla con Animales</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="crosshair"><div class="dot"></div></div>
+
+    <div id="info">
+        <strong>🏝️ Isla con Animales</strong> · Click <span>IZQUIERDO</span> poner · Click <span>DERECHO</span> destruir<br>
+        <strong>🔢 Bloques:</strong> <span>1</span> Tierra <span>2</span> Piedra <span>3</span> Madera <span>4</span> Hoja <span>5</span> Nieve<br>
+        <strong>💾 Guardado:</strong> automático · <span>R</span> borrar partida
+    </div>
+
+    <div id="expandLabel">
+        🌍 Expandir isla <span class="key">Z</span>
+    </div>
+
+    <div id="controles">
+        <span>⬆️⬇️⬅️➡️ <i>WASD / Flechas</i></span>
+        <span>🖱️ <i>Ratón</i></span>
+        <span>⬆️ <i>ESPACIO</i></span>
+        <span>🔢 <i>1-5</i></span>
+        <span>🌍 <i>Z</i></span>
+        <span>💾 <i>R</i></span>
+    </div>
+
+    <div id="bloqueo">
+        <h2>⛏️ Isla con Animales</h2>
+        <p>Construye, destruye y explora</p>
+        <div class="keys">
+            <kbd>W A S D</kbd> <kbd>↑ ← ↓ →</kbd> <kbd>Espacio</kbd> <kbd>Z</kbd> <kbd>R</kbd>
+        </div>
+        <p style="font-size:14px; opacity:0.8;">Click izquierdo: poner · Click derecho: destruir</p>
+        <p style="font-size:13px; opacity:0.7;">💾 El progreso se guarda automáticamente</p>
+        <button id="bloquearBtn">🎮 Comenzar</button>
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.128.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.128.0/examples/jsm/"
+            }
+        }
+    </script>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
